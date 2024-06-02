@@ -1,0 +1,32 @@
+{
+  "project_info": {
+    "project_number": "142741618304",
+    "project_id": "pokepabellon-34828",
+    "firebase_url": "https://pokepabellon-34828-default-rtdb.europe-west1.firebasedatabase.app",
+   
+    
+    "storage_bucket": "pokepabellon-34828.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142741618304:android:7a16a309e6b5e9671f7065",
+        "android_client_info": {
+          "package_name": "com.mateomontero.pokepabellon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmhyTJG4FpwvM5vczlPYDxFaFJND1powU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

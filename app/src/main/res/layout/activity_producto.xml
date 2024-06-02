@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/red"
+    android:orientation="vertical"
+    tools:context=".vista_compras.ProductoActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogoProductoActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:src="@drawable/pokepabellonlogoptransparente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewProductoctivityProducto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/listadetalles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogoProductoActivity" />
+
+    <Button
+        android:id="@+id/ProductoActivity_mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/red"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/ProductoActivity_Carrito"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/ProductoActivity_menos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/red"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/ProductoActivity_Carrito"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ProductoActivity_Carrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+
+        android:backgroundTint="@color/red"
+        android:text="añadir a carrito"
+        android:textSize="24sp"
+        app:icon="@android:drawable/btn_star_big_on"
+        app:iconTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ProductoActivity_editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center|center_horizontal"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/ProductoActivity_menos"
+        app:layout_constraintEnd_toStartOf="@+id/ProductoActivity_mas"
+        app:layout_constraintStart_toEndOf="@+id/ProductoActivity_menos"
+        app:layout_constraintTop_toTopOf="@+id/ProductoActivity_menos" />
+
+    <Button
+        android:id="@+id/buttonCancelarProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:text="Cancelar"
+        android:textSize="24sp"
+        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductoActivity_Carrito" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listadetalles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ProductoActivity_editTextNumber"
+        tools:layout_editor_absoluteX="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
